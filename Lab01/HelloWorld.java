@@ -1,11 +1,13 @@
-package oop_lab;
+package Lab01;
 
 import javax.swing.JOptionPane;
 
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		JOptionPane.showMessageDialog (null, "Hello world! How are you?");
+		String result;
+		result = JOptionPane.showInputDialog("Please enter your name: ");
+		JOptionPane.showMessageDialog(null, "Hello World! I'm " + result);
 		System.exit(0);
 	}
 
